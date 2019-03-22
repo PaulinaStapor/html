@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>holidays</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body style="background-position: center; background-image: url(https://www.tapeciarnia.pl/tapety/normalne/tapeta-widok-z-lodzi-na-hotel-jumeirah-vittaveli-i-plaze-na-malediwach.jpg)">
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/login">login</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/register">register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/users">users</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/addcase">add case</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/allcases">all cases</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/addholidays">add holidays</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/allholidays">all holidays</a>
+            </li>
+
+            <li><a role="button" class="nav-item nav-link" th:href="@{/logout}">logout</a></li>
+            <a class="nav-item nav-link"><p th:text="${@userContextHolder.getUserLoggedIn()}"></p></a>
+
+        </ul>
+    </div>
+</nav>
+<!--<div >-->
+    <!--<b>-->
+    <!--<i>-->
+<!--<h5  style="text-align: center" color="#b8860b">You are going on holidays! Good job!</h5>-->
+    <!--</i>-->
+    <!--</b>-->
+<!--</div>-->
+
+<!--<div class="col-xs-3">-->
+    <!--<div class="thumbnail">-->
+
+        <!--<div class="caption">-->
+            <!--<h3>Good job!</h3>-->
+            <!--<h4><p>You are going on holidays!</p></h4>-->
+            <!--<p><a href="/index" class="btn btn-outline-warning">home page</a></p>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="alert alert-primary" role="alert">
+    <h4 class="alert-heading font-weight-bold text-warning">Good job!</h4>
+    <p class="font-weight-bold">You are going on holidays! Have a great time and bring back a wonderful memories.</p>
+    <hr>
+    <p> <a href="/index" class="btn btn-outline-warning">home page</a></p>
+</div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</html>
